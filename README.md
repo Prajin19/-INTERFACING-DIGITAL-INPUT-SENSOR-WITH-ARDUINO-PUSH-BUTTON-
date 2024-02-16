@@ -1,8 +1,8 @@
 ## INTERFACING DIGITAL INPUT SENSOR WITH ARDUINO PUSH BUTTON
-## DATE :
-## NAME :																			             
-## ROLLNUMBER :
-## DEPARTMENT 
+## DATE : 16-02-2024
+## NAME : Prajin S																			             
+## ROLLNUMBER : 212223230151
+## DEPARTMENT : Artificial Intelligence and Data Sceince
 
 
 ## AIM:
@@ -34,8 +34,16 @@ Clock Speed	16 MHz
 ## PIN DIAGRAM FOR ATMEGA 328
  
 ![image](https://user-images.githubusercontent.com/36288975/163530394-115baee4-7ed1-49fe-9cce-d7b625e11e85.png)
-
 FIGURE-01
+
+
+
+
+
+
+
+
+
 ![image](https://user-images.githubusercontent.com/36288975/163530431-4d390e98-0942-42d8-95b8-f57d348e6ad8.png)
 
 FIGURE-02
@@ -53,17 +61,47 @@ FIGURE-02
 
 
 ![image](https://user-images.githubusercontent.com/36288975/163530437-87a0afbd-b3c9-44ad-b907-5de63486fb9d.png)
+FIGURE-03
 
 
 
-FIGURE -03
+
+
+![Screenshot 2024-02-16 155042](https://github.com/Prajin19/-INTERFACING-DIGITAL-INPUT-SENSOR-WITH-ARDUINO-PUSH-BUTTON-/assets/144979377/91858340-dcfd-43ff-9212-035330b28875)
+FIGURE-04
 
 
 
 
 ## PROGRAM 
- 
- 
+ ```
+int led=3;
+int pushbutton=4;
+
+void setup()
+{
+  pinMode(led,OUTPUT);
+  pinMode(pushbutton,INPUT);
+}
+
+void loop()
+{
+  int pb;
+  pb=digitalRead(pushbutton);
+  if(pb==LOW)
+  {
+    digitalWrite(led,HIGH);
+    delay(500);
+    digitalWrite(led,LOW);
+    delay(500);
+  }
+  else
+  {
+    digitalWrite(led,LOW);
+    delay(500);
+  }
+}
+```
 
 
 
@@ -81,5 +119,13 @@ FIGURE -03
 
 ## OUTPUT OF SIMULATION :
 
-[My image](username.github.com/repository/img/image.jpg)
+
+### OFF CONDITION
+![Screenshot 2024-02-16 160004](https://github.com/Prajin19/-INTERFACING-DIGITAL-INPUT-SENSOR-WITH-ARDUINO-PUSH-BUTTON-/assets/144979377/49a51fa5-d6ad-42fc-b6ee-c1f1c67093ea)
+
+
+
+### ON CONDITION
+![Screenshot 2024-02-16 160100](https://github.com/Prajin19/-INTERFACING-DIGITAL-INPUT-SENSOR-WITH-ARDUINO-PUSH-BUTTON-/assets/144979377/9b7ae969-1dff-47b4-9811-3f66a5dc7a65)
+
 
