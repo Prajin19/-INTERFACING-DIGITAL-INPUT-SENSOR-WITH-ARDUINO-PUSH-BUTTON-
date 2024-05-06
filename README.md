@@ -1,5 +1,5 @@
 ## INTERFACING DIGITAL INPUT SENSOR WITH ARDUINO PUSH BUTTON
-## DATE : 16-02-2024
+## DATE : 26-02-2024
 ## NAME : Prajin S																			             
 ## ROLLNUMBER : 212223230151
 ## DEPARTMENT : Artificial Intelligence and Data Sceince
